@@ -9,6 +9,13 @@
 
   <ItemGroup>
     <ProjectReference Include="..\HelloLib\HelloLib.csproj" />
+    <ProjectReference Include="..\SecondLib\SecondLib.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="SecondLib">
+      <HintPath>..\..\..\SecondLib.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
