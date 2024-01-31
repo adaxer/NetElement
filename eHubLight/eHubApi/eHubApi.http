@@ -1,0 +1,6 @@
+@eHubApi_HostAddress = https://localhost:7021
+
+GET {{eHubApi_HostAddress}}/weatherforecast/
+Accept: text/xml
+
+###

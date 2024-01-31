@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eHubApi", "eHubApi\eHubApi.csproj", "{24D3A271-A1E4-4274-86C3-DA56EEDF5617}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{24D3A271-A1E4-4274-86C3-DA56EEDF5617}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24D3A271-A1E4-4274-86C3-DA56EEDF5617}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24D3A271-A1E4-4274-86C3-DA56EEDF5617}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24D3A271-A1E4-4274-86C3-DA56EEDF5617}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F59B2CA9-E1FA-4DAF-B40E-F2C1648A16BC}
+	EndGlobalSection
+EndGlobal
