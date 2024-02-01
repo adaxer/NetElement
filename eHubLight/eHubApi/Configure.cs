@@ -63,7 +63,7 @@ internal static class Configure
 
         // Configure NLog as the logging provider
         builder.Logging.ClearProviders();
-        builder.Logging.SetMinimumLevel(Microsoft.Extensions.Logging.LogLevel.Information);
+        builder.Logging.SetMinimumLevel(Microsoft.Extensions.Logging.LogLevel.Warning);
         builder.Host.UseNLog();
     }
 }

@@ -1,0 +1,287 @@
+{
+
+    "completePicklist": true,
+
+    "orderLines": [{
+
+            "completeLine": true,
+
+            "customAllocationData": {},
+
+            "customData": {},
+
+            "extOrderId": "OR_Kunde15",
+
+            "extOrderlineId": 1,
+
+            "extPicklistLineId": 0,
+
+            "missions": [{
+
+                    "batchId": "0",
+
+                    "containers": [{
+
+                            "containerType": "Trolley",
+
+                            "id": "76",
+
+                            "internalTrackingNumber": "100448",
+
+                            "items": [{
+
+                                    "quantity": "2"
+
+                                }
+
+                            ],
+
+                            "metaTags": ""
+
+                        }
+
+                    ],
+
+                    "customAllocationData": {},
+
+                    "dateCompleted": "2024-01-31T15:52:45.8847038+01:00",
+
+                    "dateTimeCompleted": "2024-01-31T15:52:45.8847038+01:00",
+
+                    "deliverState": "Complete",
+
+                    "depthIntId": 1,
+
+                    "depthUserDefId": "AS-100004-01-01",
+
+                    "equipmentCode": "AS",
+
+                    "isLastMissionForOrderLine": true,
+
+                    "locationName": "AS-100004-01-01",
+
+                    "missionId": 310,
+
+                    "orderLineMissionNumber": 1,
+
+                    "pickedByUser": "adm",
+
+                    "pickedQuantity": "2",
+
+                    "plannedQuantity": "2",
+
+                    "posUserDefId": "AS-100004-01",
+
+                    "productExpiryDate": "2023-03-01T00:00:00Z",
+
+                    "remainingQuantity": "0",
+
+                    "scanValues": [],
+
+                    "shelfUserDefId": "AS-100004",
+
+                    "taskgroupId": 1751,
+
+                    "timeCompleted": "15:52:45",
+
+                    "transportLocation": "K02-000001-01-01",
+
+                    "userId": 1,
+
+                    "zoneUserDefId": "AS"
+
+                }
+
+            ],
+
+            "order": {
+
+                "speditorId": "DHL"
+
+            },
+
+            "orderlineCode": 1,
+
+            "pickedQuantity": "2",
+
+            "plannedQuantity": "2",
+
+            "product": {
+
+                "eanId": "501501",
+
+                "expiryDateRequired": false,
+
+                "productName": "Element Logic Emergency Stop Taster",
+
+                "productNo": "502",
+
+                "salesUnit": {
+
+                    "salesUnitDepth": 10,
+
+                    "salesUnitHeight": 10,
+
+                    "salesUnitText": "PCE",
+
+                    "salesUnitVolum": 1000.000,
+
+                    "salesUnitWeight": 88.000000,
+
+                    "salesUnitWidth": 10
+
+                }
+
+            },
+
+            "restOrder": false
+
+        }, {
+
+            "completeLine": true,
+
+            "customAllocationData": {},
+
+            "customData": {},
+
+            "extOrderId": "OR_Kunde15",
+
+            "extOrderlineId": 2,
+
+            "extPicklistLineId": 0,
+
+            "missions": [{
+
+                    "batchId": "0",
+
+                    "containers": [{
+
+                            "containerType": "Trolley",
+
+                            "id": "76",
+
+                            "internalTrackingNumber": "100448",
+
+                            "items": [{
+
+                                    "quantity": "2"
+
+                                }
+
+                            ],
+
+                            "metaTags": ""
+
+                        }
+
+                    ],
+
+                    "customAllocationData": {},
+
+                    "dateCompleted": "2024-01-31T15:52:43.0596426+01:00",
+
+                    "dateTimeCompleted": "2024-01-31T15:52:43.0596426+01:00",
+
+                    "deliverState": "Complete",
+
+                    "depthIntId": 1,
+
+                    "depthUserDefId": "AS-100004-01-01",
+
+                    "equipmentCode": "AS",
+
+                    "isLastMissionForOrderLine": true,
+
+                    "locationName": "AS-100004-01-01",
+
+                    "missionId": 311,
+
+                    "orderLineMissionNumber": 1,
+
+                    "pickedByUser": "adm",
+
+                    "pickedQuantity": "2",
+
+                    "plannedQuantity": "2",
+
+                    "posUserDefId": "AS-100004-01",
+
+                    "productExpiryDate": "2023-03-01T00:00:00Z",
+
+                    "remainingQuantity": "0",
+
+                    "scanValues": [],
+
+                    "shelfUserDefId": "AS-100004",
+
+                    "taskgroupId": 1751,
+
+                    "timeCompleted": "15:52:43",
+
+                    "transportLocation": "K02-000001-01-01",
+
+                    "userId": 1,
+
+                    "zoneUserDefId": "AS"
+
+                }
+
+            ],
+
+            "order": {
+
+                "speditorId": "DHL"
+
+            },
+
+            "orderlineCode": 2,
+
+            "pickedQuantity": "2",
+
+            "plannedQuantity": "2",
+
+            "product": {
+
+                "eanId": "501501",
+
+                "expiryDateRequired": false,
+
+                "productName": "Element Logic Emergency Stop Taster",
+
+                "productNo": "502",
+
+                "salesUnit": {
+
+                    "salesUnitDepth": 10,
+
+                    "salesUnitHeight": 10,
+
+                    "salesUnitText": "PCE",
+
+                    "salesUnitVolum": 1000.000,
+
+                    "salesUnitWeight": 88.000000,
+
+                    "salesUnitWidth": 10
+
+                }
+
+            },
+
+            "restOrder": false
+
+        }
+
+    ],
+
+    "orderTypeId": "normal",
+
+    "picklistId": "PickList0072",
+
+    "printerCode": "PO01",
+
+    "printerName": "<unknown>",
+
+    "transactionId": 2325
+
+}
