@@ -1,0 +1,22 @@
+02/01/2024 15:51:31: Log with Body: <?xml version="1.0" encoding="utf-16"?>
+<PICK_ERROR xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <MSG_ID>0</MSG_ID>
+  <TRANDT>0</TRANDT>
+  <WCS_ID />
+  <PICK_ERR_SEG>
+    <PICK_ERR_SEG>
+      <WRKREF>string</WRKREF>
+      <CANQTY>0</CANQTY>
+      <CANCOD>Constant</CANCOD>
+      <ERROR_DESCR>No stock available</ERROR_DESCR>
+    </PICK_ERR_SEG>
+  </PICK_ERR_SEG>
+</PICK_ERROR>
+02/01/2024 17:02:43: Cleanup active
+02/01/2024 17:02:49: Cleanup active
+02/01/2024 17:02:54: Cleanup active
+02/01/2024 17:02:59: Cleanup active
+02/01/2024 17:03:04: Cleanup active
+02/01/2024 17:03:09: Cleanup active
+02/01/2024 17:03:14: Cleanup active
+02/01/2024 17:03:19: Cleanup active
