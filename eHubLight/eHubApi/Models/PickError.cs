@@ -1,17 +1,21 @@
-﻿public class PICKERRSEG 
+﻿public class PICK_ERR_SEG 
 { 
 	public string WRKREF { get; set; } 
-	public int CANQTY { get; set; } 
-	public string CANCOD { get; set; } 
-	public string ERRORDESCR { get; set; } 
+	public int CANQTY { get; set; }
+	public string CANCOD { get; set; }
+	public string ERROR_DESCR { get; set; } 
 }
 
-public class PICKERROR 
+public class PICK_ERROR 
 { 
-	public int MSGID { get; set; } 
-	public double TRANDT { get; set; } 
-	public string WCSID { get; set; } 
-	public string WHID { get; set; } 
-	public List<PICKERRSEG> PICKERRSEG { get; set; } 
+	public int MSG_ID { get; set; } 
+	public double TRANDT { get; set; }
+	public string WCS_ID { get; set; } = "";
+	public string WH_ID { get; set; } 
+	public PICK_ERR_SEG[] PICK_ERR_SEG { get; set; }  = new List<PICK_ERR_SEG>().ToArray();
 }
+
+
+
+
 

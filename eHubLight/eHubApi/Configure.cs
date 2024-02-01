@@ -4,6 +4,9 @@ using NLog.Web;
 using NLog;
 using Microsoft.AspNetCore.Mvc.Formatters;
 using eHubApi.Middleware;
+using eHubApi.Services;
+using eHubApi.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace eHubApi;
 
@@ -29,7 +32,7 @@ internal static class Configure
     internal static void ConfigureBuilder(WebApplicationBuilder builder)
     {
 
-        builder.Services.AddControllers(o=>
+        builder.Services.AddControllers(o =>
         {
             o.OutputFormatters.Add(new XmlSerializerOutputFormatter());
         });
@@ -39,7 +42,28 @@ internal static class Configure
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
 
-       ConfigureNLog(builder);
+        ConfigureNLog(builder);
+
+        builder.Services.AddHttpClient("Debug", (HttpClient client) =>
+        {
+            var address = builder.Configuration.GetValue<string>("ClientBaseAddress");
+            client.BaseAddress = new Uri(address!, UriKind.Absolute);
+        });
+
+        builder.Services.AddHostedService<CleanupDataBaseService>();
+
+        builder.Services.AddDbContext<LogContext>(bld=>
+        {
+            var connection = builder.Configuration.GetConnectionString("LogDb");
+            bld.UseSqlite(connection);
+        });
+
+        AddServices(builder.Services);
+    }
+
+    private static void AddServices(IServiceCollection services)
+    {
+        services.AddScoped<IPickListService, PickListService>();
     }
 
     private static void ConfigureNLog(WebApplicationBuilder builder)
