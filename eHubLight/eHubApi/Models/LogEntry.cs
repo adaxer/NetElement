@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace eHubApi.Models;
+﻿namespace eHubApi.Models;
 
 public class LogEntry
 {

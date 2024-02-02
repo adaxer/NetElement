@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eHubApi", "eHubApi\eHubApi.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eHub.ConsoleClient", "eHub.ConsoleClient\eHub.ConsoleClient.csproj", "{D6C162FE-9B9A-4A11-ACCA-C1BEFF91B427}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eHub.Web", "eHub.Web\eHub.Web.csproj", "{460D673E-5881-4CD6-A152-4C851EB7EDF3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{D6C162FE-9B9A-4A11-ACCA-C1BEFF91B427}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D6C162FE-9B9A-4A11-ACCA-C1BEFF91B427}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D6C162FE-9B9A-4A11-ACCA-C1BEFF91B427}.Release|Any CPU.Build.0 = Release|Any CPU
+		{460D673E-5881-4CD6-A152-4C851EB7EDF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{460D673E-5881-4CD6-A152-4C851EB7EDF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{460D673E-5881-4CD6-A152-4C851EB7EDF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{460D673E-5881-4CD6-A152-4C851EB7EDF3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

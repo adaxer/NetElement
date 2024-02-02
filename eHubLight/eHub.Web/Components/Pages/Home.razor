@@ -1,0 +1,31 @@
+﻿@page "/"
+
+<PageTitle>Home</PageTitle>
+
+<h1>Hello, Blazor world!</h1>
+
+<ul>
+    @foreach (var item in logs)
+    {
+        <li>@item</li>
+    }
+</ul>
+
+<br />
+
+<button @onclick="LoadLogs">Load Logs</button>
+Welcome to your new app.
+
+@code
+{
+    [Inject]
+    IHttpClientFactory? ClientFactory { get; set; }
+
+    List<string> logs = new();
+
+    private async Task LoadLogs(MouseEventArgs e)
+    {
+        var client = ClientFactory!.CreateClient("Api");
+        logs = (await client.GetFromJsonAsync<List<LogEntry>>("Log/List/10"))!.Select(le => $"{le.Created} : {le.Message}").ToList();
+    }
+}
