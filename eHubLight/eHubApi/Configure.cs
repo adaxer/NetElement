@@ -27,6 +27,7 @@ internal static class Configure
 
         app.UseMyRequestLogging();
         app.MapControllers();
+        app.MapHub<MessageHub>("/messages");
     }
 
     internal static void ConfigureBuilder(WebApplicationBuilder builder)
@@ -57,6 +58,8 @@ internal static class Configure
             var connection = builder.Configuration.GetConnectionString("LogDb");
             bld.UseSqlite(connection);
         });
+
+        builder.Services.AddSignalR();
 
         AddServices(builder.Services);
     }

@@ -1,7 +1,9 @@
 ﻿
 
 using eHubApi.Data;
+using eHubApi.Middleware;
 using eHubApi.Models;
+using Microsoft.AspNetCore.SignalR;
 using Microsoft.EntityFrameworkCore;
 
 namespace eHubApi;
@@ -71,6 +73,8 @@ public class CleanupDataBaseService : IHostedService
             readCount += logs.Count;
         } while (logs.Count() > 0);
         _isRunning = false;
+        var hub = scope.ServiceProvider.GetRequiredService<IHubContext<MessageHub>>();
+        await hub.Clients.All.SendAsync("send", $"Database cleaned at {DateTime.Now}");
     }
 
     public Task StopAsync(CancellationToken cancellationToken) => Task.CompletedTask;
